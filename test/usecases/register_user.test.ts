@@ -48,9 +48,9 @@ describe("RegisterUserUseCase", () => {
 
   it("should throw UnprocessableEntityException if user creation fails", async () => {
     const newUser = {
-      name: "Jane Doe",
-      email: "jane.doe@example.com",
-      password: "SecurePass123",
+      name: "Ayrtown Senna",
+      email: "AyrtonSenna@ferrari.com",
+      password: "Ferrari123",
     };
 
     vi.spyOn(userRepoMock, "createUser").mockImplementation(() => {
