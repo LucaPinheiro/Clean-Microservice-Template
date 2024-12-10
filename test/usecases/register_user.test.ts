@@ -12,7 +12,6 @@ describe("RegisterUserUseCase", () => {
     vi.spyOn(userRepoMock, "fetchUserByEmail");
     vi.spyOn(userRepoMock, "createUser");
 
-    // Injecting the mock repository
     registerUserUseCase = new RegisterUserUseCase();
     registerUserUseCase["userRepo"] = userRepoMock;
   });
